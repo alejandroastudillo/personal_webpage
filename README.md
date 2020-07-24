@@ -224,3 +224,8 @@ Yay! Our source branch is a direct copy of our master. Now, on Github we need to
 Navigate to your repo on Github, and select "Settings".
 On the left-side panel, click on "Branches".
 Next, you're able to select your source branch and update it under the Default branch heading.
+
+
+
+
+https://dev.to/javascripterika/deploy-a-react-app-as-a-github-user-page-with-yarn-3fka
