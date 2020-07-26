@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
-import Home from './Home';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import React from 'react';
+import Sidebar from './sidebar/Sidebar';
+import Content from './Content';
 
-class Main extends Component {
-
-    render() {
-        return (
-            <Switch>
-                <Route exact path="/home" component={() => <Home />} />
-                <Redirect to="/home" />
-            </Switch>
-        );
-    }
+const Main = () => {
+    return (
+        <div>
+            <Sidebar />
+            <Content />
+        </div>
+    )
 }
 
 export default Main;
