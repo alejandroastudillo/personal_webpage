@@ -1,0 +1,22 @@
+@import '../../styles/shared.scss';
+
+$sidebar-hover-color: #ebebeb;
+.ui.menu.fixed.side-nav {
+    background-color: #f6f6f6;
+    margin-top: $header-nav-height;
+    overflow-y: auto;
+    padding-bottom: $header-nav-height;
+  
+    .sidebar-item:hover {
+      background: #eaeaea;
+    }
+  }
+  
+  .side-nav.ui.vertical.menu {
+    width: $sidebar-left-width;
+  }
+
+.social-buttons {
+  margin-top: 20px;
+  margin-left: 20px;
+}

@@ -4,7 +4,7 @@ import Home from './Home';
 
 const Container = styled.div`
     width: auto;
-    margin-left: 16rem;
+    margin-left: 17rem;
     position: relative;
     padding: 0 4rem;
 `

@@ -1,13 +1,14 @@
 import React from 'react';
-import Sidebar from './sidebar/Sidebar';
 import Content from './Content';
+import {SideBar} from '../containers/SideBar/SideBar';
+
 
 const Main = () => {
     return (
-        <div>
-            <Sidebar />
+        <React.Fragment>
+            <SideBar />
             <Content />
-        </div>
+        </React.Fragment>
     )
 }
 
