@@ -19,11 +19,11 @@ export class SideBar extends React.Component {
 
                 <Divider />
 
-                <SideBarItem highlight={true} label='About Me' icon='home' href='#'/>
-                <SideBarItem label='Education' icon='fire' href='#'/>
-                <SideBarItem label='Research' icon='spy' href='#'/>
-                <SideBarItem label='Publications' icon='history' href='#'/>
-                <SideBarItem label='Contact' icon='comment' href='#'/>
+                <SideBarItem highlight={true} label='About Me' icon='user' href='#'/>
+                <SideBarItem label='Education' icon='book' href='#'/>
+                <SideBarItem label='Research' icon='university' href='#'/>
+                <SideBarItem label='Publications' icon='archive' href='#'/>
+                {/* <SideBarItem label='Contact' icon='comment' href='#'/> */}
                 
                 {/* <Divider /> */}
                 
