@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Container, Header, Card } from 'semantic-ui-react';
 import './Profile.scss';
-import photo from '../../assets/profileimg.jpg';
+import photo from '../../assets/images/profileimg.jpg';
 
 
 

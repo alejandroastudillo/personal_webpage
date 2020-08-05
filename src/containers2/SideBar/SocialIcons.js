@@ -46,7 +46,7 @@ const SocialIcons = () => {
                         <a href="https://www.linkedin.com/in/alejandro-astudillo-vigoya/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin fa-2x"></i></a>
                     </Grid.Column>
                     <Grid.Column>
-                        <a href="mailto: alejoastv@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-envelope fa-2x"></i></a>
+                        <a href="mailto:alejoastv@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-envelope fa-2x"></i></a>
                     </Grid.Column>
                     <Grid.Column></Grid.Column>
                 </Grid>
