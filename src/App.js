@@ -3,7 +3,7 @@ import Main from './components/Main';
 import Main2 from './components2/Main';
 // import './App.css';
 import './styles/App.scss';
-import { HashRouter, BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (

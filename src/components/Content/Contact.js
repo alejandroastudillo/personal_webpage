@@ -3,8 +3,9 @@ import Switch from 'react-switch';
 import { FaHeart, FaBars, FaHome } from 'react-icons/fa';
 import reactLogo from '../../assets/images/logo.svg';
 
-const Home = ({collapsed, image, handleToggleSidebar, handleCollapsedChange, handleImageChange}) => {
-    
+
+const Contact = ({collapsed, image, toggled, handleToggleSidebar, handleCollapsedChange, handleImageChange}) => {
+
     return (
         <main>
             <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
@@ -12,10 +13,10 @@ const Home = ({collapsed, image, handleToggleSidebar, handleCollapsedChange, han
             </div>
             <header>
                 <h1>
-                    <img width={80} src={reactLogo} alt="react logo" /> Who am I?
+                    <img width={80} src={reactLogo} alt="react logo" /> Contact
                 </h1>
 
-                <p>My personal academic website</p>
+                <p>This is a contact form</p>
 
             </header>
             <div className="block ">
@@ -70,7 +71,7 @@ const Home = ({collapsed, image, handleToggleSidebar, handleCollapsedChange, han
             </footer>
         </main>
     );
-    
-};
 
-export default Home;
+}
+
+export default Contact;

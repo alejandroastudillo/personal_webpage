@@ -5,6 +5,7 @@ import Home from './Content/Home';
 import Publications from './Content/Publications';
 import Education from './Content/Education';
 import Research from './Content/Research';
+import Contact from './Content/Contact';
 
 const Main = () => {
 
@@ -68,6 +69,16 @@ const Main = () => {
                 />
                 <Route exact path={process.env.PUBLIC_URL + "/allpublications"} component={() => 
                     <Publications 
+                        image={image}
+                        toggled={toggled}
+                        collapsed={collapsed}
+                        handleToggleSidebar={handleToggleSidebar}
+                        handleCollapsedChange={handleCollapsedChange}
+                        handleImageChange={handleImageChange}
+                    />} 
+                />
+                <Route exact path={process.env.PUBLIC_URL + "/contact"} component={() => 
+                    <Contact
                         image={image}
                         toggled={toggled}
                         collapsed={collapsed}
