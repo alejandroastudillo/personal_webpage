@@ -38,6 +38,9 @@ const Sidebar = ({image, collapsed, toggled, handleToggleSidebar}) => {
         setResearchClick(false);
         setPublicationsClick(false);
         setContactClick(false);
+
+        // If screen is smaller than breakdown (md)
+        handleToggleSidebar(false);
     }
     const handleEducationClick = () => {
         setAboutUsClick(false);
@@ -45,6 +48,7 @@ const Sidebar = ({image, collapsed, toggled, handleToggleSidebar}) => {
         setResearchClick(false);
         setPublicationsClick(false);
         setContactClick(false);
+        handleToggleSidebar(false);
     }
     const handleResearchClick = () => {
         setAboutUsClick(false);
@@ -52,6 +56,7 @@ const Sidebar = ({image, collapsed, toggled, handleToggleSidebar}) => {
         setResearchClick(true);
         setPublicationsClick(false);
         setContactClick(false);
+        handleToggleSidebar(false);
     }
     const handlePublicationsClick = () => {
         setAboutUsClick(false);
@@ -59,6 +64,7 @@ const Sidebar = ({image, collapsed, toggled, handleToggleSidebar}) => {
         setResearchClick(false);
         setPublicationsClick(true);
         setContactClick(false);
+        handleToggleSidebar(false);
     }
     const handleContactClick = () => {
         setAboutUsClick(false);
@@ -66,6 +72,8 @@ const Sidebar = ({image, collapsed, toggled, handleToggleSidebar}) => {
         setResearchClick(false);
         setPublicationsClick(false);
         setContactClick(true);
+        handleToggleSidebar(false);
+        
     }
 
     return (

@@ -7,6 +7,8 @@ import Education from './Content/Education';
 import Research from './Content/Research';
 import Contact from './Content/Contact';
 
+// import { useSwipeable } from "react-swipeable";
+
 const Main = () => {
 
     const [collapsed, setCollapsed] = useState(false);
