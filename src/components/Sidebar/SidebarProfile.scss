@@ -30,6 +30,24 @@
         color: #bdbdbd;
     }
 
+    &.collapsed {
+        .profile-image {
+            // display: none;
+            width: 3.8rem;
+            height: 3.8rem;
+        }
+        .profile-name {
+            display: none;
+        }
+        .profile-position {
+            display: none;
+        }
+        .profile-workplace {
+            display: none;
+        }
+
+    }
+
 }
 
 

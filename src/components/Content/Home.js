@@ -1,59 +1,63 @@
-import React from 'react';
-import Switch from 'react-switch';
-import { FaHeart, FaBars, FaHome } from 'react-icons/fa';
-import reactLogo from '../../assets/images/logo.svg';
+import React from "react";
+import Switch from "react-switch";
+import { FaHeart, FaBars, FaHome } from "react-icons/fa";
+import reactLogo from "../../assets/images/logo.svg";
 
-const Home = ({collapsed, image, handleToggleSidebar, handleCollapsedChange, handleImageChange}) => {
-    
-    return (
-        <main>
-            <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
-                <FaBars />
-            </div>
-            <header>
-                <h1>
-                    <img width={80} src={reactLogo} alt="react logo" /> Who am I?
-                </h1>
+const Home = ({
+  collapsed,
+  image,
+  handleToggleSidebar,
+  handleCollapsedChange,
+  handleImageChange,
+}) => {
+  return (
+    <main>
+      <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
+        <FaBars />
+      </div>
+      <header>
+        <h1>
+          <img width={80} src={reactLogo} alt="react logo" /> Who am I?
+        </h1>
 
-                <p>My personal academic website</p>
+        <p>My personal academic website</p>
+      </header>
+      <div className="block ">
+        <Switch
+          height={16}
+          width={30}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          onChange={handleCollapsedChange}
+          checked={collapsed}
+          onColor="#219de9"
+          offColor="#bbbbbb"
+        />
+        <span> Collapse sidebar </span>
+      </div>
+      <div className="block">
+        <Switch
+          height={16}
+          width={30}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          onChange={handleImageChange}
+          checked={image}
+          onColor="#219de9"
+          offColor="#bbbbbb"
+        />
+        <span> Sidebar background image </span>
+      </div>
 
-            </header>
-            <div className="block ">
-                <Switch
-                    height={16}
-                    width={30}
-                    checkedIcon={false}
-                    uncheckedIcon={false}
-                    onChange={handleCollapsedChange}
-                    checked={collapsed}
-                    onColor="#219de9"
-                    offColor="#bbbbbb"
-                />
-                <span> Collapse sidebar </span>
-            </div>
-            <div className="block">
-                <Switch
-                    height={16}
-                    width={30}
-                    checkedIcon={false}
-                    uncheckedIcon={false}
-                    onChange={handleImageChange}
-                    checked={image}
-                    onColor="#219de9"
-                    offColor="#bbbbbb"
-                />
-                <span> Sidebar background image </span>
-            </div>
-
-            <footer>
-                <small>
-                © 2020 made with <FaHeart style={{ color: 'red' }} /> by -{' '}
-                <a target="_blank" rel="noopener noreferrer" href="https://dev.telemd.com">
-                    TeleMD Developers
-                </a>
-                </small>
-                <br />
-                {/* <div className="social-bagdes">
+      <footer>
+        <small>
+          © 2020 made with <FaHeart style={{ color: "red" }} /> by - Alejandro
+        </small>
+        <br />
+        {/* <a target="_blank" rel="noopener noreferrer" href="https://dev.telemd.com">
+        Alejandro
+        </a> */}
+        {/* <div className="social-bagdes">
                 <a href="https://github.com/teleMDdev" target="_blank" rel="noopener noreferrer">
                     <img
                     alt="GitHub followers"
@@ -67,10 +71,9 @@ const Home = ({collapsed, image, handleToggleSidebar, handleCollapsedChange, han
                     />
                 </a>
                 </div> */}
-            </footer>
-        </main>
-    );
-    
+      </footer>
+    </main>
+  );
 };
 
 export default Home;

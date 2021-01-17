@@ -103,7 +103,7 @@ const Sidebar = ({image, collapsed, toggled, handleToggleSidebar}) => {
                 
             </SidebarHeader> */}
             <div className="profile-container">
-                <Image src={photo} roundedCircle />
+                <Image className="profile-image" src={photo} roundedCircle />
 
                 <div className="profile-data">
                     <p className="profile-name">
